@@ -1,4 +1,4 @@
-"use script";
+/*"use script";
 
 startGame();
 
@@ -113,3 +113,4 @@ function questionFive() {
     alert("Yes or No answers please.");
   }
 }
+*/

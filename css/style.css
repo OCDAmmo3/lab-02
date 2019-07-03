@@ -2,27 +2,68 @@ body {
   background-color:grey;
   color:white;
   font-family:sans-serif;
-  text-align:center;
 }
-#introPara {
-  background-color:white;
-  color:grey;
+#infoBlock {
+  background-color:rgb(219,142,103);
+  color:white;
   padding:8px;
   width:100%;
   margin-left:-8px;
-  border-top:black solid 2px;
+  border-top:black solid 1px;
   border-bottom:black solid 2px;
+  text-align:center;
 }
 h1 {
   font-size:40px;
   text-shadow:1px 1px black;
 }
-#infoPara {
-  border-bottom:black solid 2px;
+#header1 {
+  border-bottom:black solid 1px;
   padding-bottom:10px;
   border-width:100%;
   margin-left:-8px;
   margin-right:-8px;
   padding-left:16px;
   padding-right:16px;
+  padding-top:10px;
+  margin-top:-10px;
+  background-color:rgb(170,125,201);
+  text-align:center;
+}
+#infoBlock2 {
+  background-color:rgb(103,200,219);
+  padding-top:8px;
+  margin-right:-8px;
+  margin-left:-8px;
+  padding-left:10px;
+  padding-right:10px;
+  color:white;
+  padding-bottom:2px;
+  border-bottom:black solid 2px;
+  text-align:center;
+}
+#moviesList {
+  text-align:left;
+  padding-left:20px;
+  font-size:+18px;
+  float:left;
+  border-right:black solid 2px;
+  padding-right:20%;
+  margin-right:2%;
+  padding-bottom:35%;
+}
+#familyList {
+  text-align:left;
+  float:left;
+  padding-left:10%;
+}
+ol {
+  padding-left:24px;
+}
+ul {
+  padding-left:24px;
+  margin-left:20px;
+}
+.jumpOut {
+  margin-left:640px;
 }

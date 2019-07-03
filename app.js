@@ -1,4 +1,4 @@
-/*"use script";
+"use script";
 
 startGame();
 
@@ -12,6 +12,7 @@ function startGame(){
   questionThree();
   questionFour();
   questionFive();
+  questionSix();
 }
 
 function questionOne() {
@@ -113,4 +114,16 @@ function questionFive() {
     alert("Yes or No answers please.");
   }
 }
-*/
+
+function questionSix() {
+  var questionSix = prompt("What kind of jobs have I worked in the past?");
+
+  var answerSix = questionSix.toLowerCase().trim();
+
+  console.log(answerSix);
+
+  if(answerSix === "pizza making" || answerSix === "serving" || answerSix === "insurance sales" answerSix === "bartending")
+  {
+    
+  }
+}

@@ -2,6 +2,7 @@
 
 console.log("Hi Katie/Craig/anybody else looking at this.")
 console.log("How are you?")
+
 startGame();
 
 function startGame(){
@@ -96,7 +97,7 @@ function questionFour() {
 }
 
 function questionFive() {
-  var questionFive = prompt("Am I half, American half _____?");
+  var questionFive = prompt("Is baseball the best sport in America?");
 
   var answerFive = questionFive.toLowerCase().trim();
 
@@ -104,20 +105,12 @@ function questionFive() {
 
   if(answerFive === "yes" || answerFive === "y")
   {
-    alert("Yes!")
-    alert("Well...")
-    alert("Kind of?")
-    alert("My mom was born in Addis Ababa, Ethiopia in Africa. My grandparents were missionaries there for a few years, but moved back to America a year after my mother was born. So I can say I'm half, right?")
+    alert("Yes. The answer is yes.")
     alert("Anyways, that's all I got. Whether you did good or not, here's your chance to learn more about me.")
   } else if(answerFive === "no" || answerFive === "n")
   {
     alert("You have failed.")
-    alert("Mom was born in Africa.")
-    alert("While my grandparents were missionaries.")
-    alert("So eat that.")
-    alert("Obviously half American.")
-    alert("Duh.")
-    alert("That's how it works.")
+    alert("Baseball was and always will be a gift from America. The greatest gift.")
     alert("Anyways, that's all I got. Whether you did good or not, here's your chance to learn more about me.")
   } else {
     alert("Yes or No answers please.");

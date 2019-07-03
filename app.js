@@ -1,8 +1,5 @@
 "use script";
 
-console.log("Hi Katie/Craig/anybody else looking at this.")
-console.log("How are you?")
-
 startGame();
 
 function startGame(){
@@ -105,7 +102,7 @@ function questionFive() {
 
   if(answerFive === "yes" || answerFive === "y")
   {
-    alert("Yes. The answer is yes.")
+    alert("Yes. The answer is yes. It's America's pass time.")
     alert("Anyways, that's all I got. Whether you did good or not, here's your chance to learn more about me.")
   } else if(answerFive === "no" || answerFive === "n")
   {

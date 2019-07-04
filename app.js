@@ -13,6 +13,7 @@ function startGame(){
   questionFour();
   questionFive();
   questionSix();
+  questionSeven();
 }
 
 function questionOne() {
@@ -104,26 +105,58 @@ function questionFive() {
   if(answerFive === "yes" || answerFive === "y")
   {
     alert("Yes. The answer is yes. It's America's pass time.")
-    alert("Anyways, that's all I got. Whether you did good or not, here's your chance to learn more about me.")
   } else if(answerFive === "no" || answerFive === "n")
   {
     alert("You have failed.")
     alert("Baseball was and always will be a gift from America. The greatest gift.")
-    alert("Anyways, that's all I got. Whether you did good or not, here's your chance to learn more about me.")
   } else {
     alert("Yes or No answers please.");
   }
 }
 
-function questionSix() {
-  var questionSix = prompt("What kind of jobs have I worked in the past?");
+function questionSix(){
 
-  var answerSix = questionSix.toLowerCase().trim();
+  var heroes = ["avengers","justice league","fantastic four","x-men","guardians of the galaxy","x-force","ravagers"];
+  var tries = 0;
+  var userAnswerCorrect = 0;
 
-  console.log(answerSix);
-
-  if(answerSix === "pizza making" || answerSix === "serving" || answerSix === "insurance sales" answerSix === "bartending")
-  {
-    
+//tried doing === 7 at first and it just jumped out after the first guess, not responding at all. Realized I needed !== instead as I'm trying to do something until it's equal to 7, not doing something while it's equal to 7.
+  while(tries !== 7){
+    var userAnswer = prompt("Can you name 7 of my favorite superhero teams?");
+    var fixedAnswer = userAnswer.toLowerCase().trim();
+    //Had trouble getting the first answer to respond as correct. Fixed with >= rather than just >.
+    if (heroes.indexOf(fixedAnswer) >= 0) {
+      alert(userAnswer + " is definitely one of the best.")
+      userAnswerCorrect++;
+      //took a while to think of how to give them their score at the end.
+    } else {
+      alert("Honestly not too sure about that one, but I can at least say that's not one that I had on my list.");
+    }
+    tries++;
   }
+  alert("Here's my list:  Avengers, Justice League, Fantastic Four, X-Men, Guardians of the Galaxy, X-Force, and the Ravagers.")
+  alert("You got " + userAnswerCorrect + " out of " + heroes.length + " right. I'm impressed.");
 }
+
+function questionSeven() {
+//question 7 went easily after fixing out all the bugs from question 6. 
+  var villains = ["legion of doom","sinister six","brotherhood","league of shadows","suicide squad","children of thanos"]
+  var tries2 = 0;
+  var userAnswerCorrect2 = 0;
+
+  while(tries2 !== 6) {
+    var userAnswer = prompt("How about 6 of my favorite villain groups?");
+    var fixedAnswer = userAnswer.toLowerCase().trim();
+    if (villains.indexOf(fixedAnswer) >= 0) {
+      alert("Nice! " + userAnswer + " is quite evil indeed.")
+      userAnswerCorrect2++;
+    } else {
+      alert("Well if that's one of them, it's not one I know. Sorry.");
+    }
+    tries2++;
+  }
+  alert("Well here's my villain list too:  Legion of Doom, Sinister Six, Brotherhood, League of Shadows, Suicide Squad, and then I tagged on the Children of Thanos too, because... well they suck.")
+  alert("You got " + userAnswerCorrect2 + " out of " + villains.length + " right. I'm impressed yet again.");
+}
+
+alert("Well that is all I have for you. Hope you learned something about me, and that this helps you learn more in as you read.")

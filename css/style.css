@@ -48,8 +48,8 @@ h1 {
   font-size:+18px;
   float:left;
   border-right:black solid 2px;
-  padding-right:20%;
-  margin-right:2%;
+  padding-right:25%;
+  margin-right:3%;
   padding-bottom:35%;
 }
 #familyList {
@@ -65,5 +65,5 @@ ul {
   margin-left:20px;
 }
 .jumpOut {
-  margin-left:640px;
+  margin-left:55%;
 }

@@ -1,4 +1,4 @@
-"use script";
+/*"use script";
 
 startGame();
 
@@ -139,7 +139,7 @@ function questionSix(){
 }
 
 function questionSeven() {
-//question 7 went easily after fixing out all the bugs from question 6. 
+//question 7 went easily after fixing out all the bugs from question 6.
   var villains = ["legion of doom","sinister six","brotherhood","league of shadows","suicide squad","children of thanos"]
   var tries2 = 0;
   var userAnswerCorrect2 = 0;
@@ -160,3 +160,4 @@ function questionSeven() {
 }
 
 alert("Well that is all I have for you. Hope you learned something about me, and that this helps you learn more in as you read.")
+*/

@@ -142,7 +142,24 @@ function questionSix(){
 }*/
 
 function questionSix() {
+  //ask whats a favorite number
+  var favNumber = 9; 
+  var userAnswer = 0; 
+  var tries = 0;
 
+  while(tries < 3){
+    var userAnswer = prompt('What is my favorite number?!');
+    if(userAnswer < favNumber){
+      alert('Not enough; go higher.');
+      tries++;
+    } else if(userAnswer > favNumber){
+      tries++;
+      alert('Too much; Go lower!');
+    } else {
+      alert('you right.');
+      tries+=3;
+    }
+  }
   
 }
 

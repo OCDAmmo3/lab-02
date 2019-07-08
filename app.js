@@ -1,4 +1,4 @@
-/*"use script";
+"use script";
 
 startGame();
 
@@ -113,6 +113,9 @@ function questionFive() {
     alert("Yes or No answers please.");
   }
 }
+/*
+
+I THOUGHT I WAS MEANT TO DO 2 EXAMPLES OF THE SAME QUESTION TYPE, SO THIS WAS MY FIRST QUESTION 6. TAKES AN ARRAY LIKE QUESTION 7 DOES, BUT QUESTION 7 RECEIVED CHANGES I NEVER IMPLEMENTED ON THIS ONE, AS I CHANGED THIS ONE TO A NUMBER ANSWER QUESTION INSTEAD.
 
 function questionSix(){
 
@@ -136,6 +139,11 @@ function questionSix(){
   }
   alert("Here's my list:  Avengers, Justice League, Fantastic Four, X-Men, Guardians of the Galaxy, X-Force, and the Ravagers.")
   alert("You got " + userAnswerCorrect + " out of " + heroes.length + " right. I'm impressed.");
+}*/
+
+function questionSix() {
+
+  
 }
 
 function questionSeven() {
@@ -147,17 +155,16 @@ function questionSeven() {
   while(tries2 !== 6) {
     var userAnswer = prompt("How about 6 of my favorite villain groups?");
     var fixedAnswer = userAnswer.toLowerCase().trim();
+    var index = villains.indexOf(userAnswer);
     if (villains.indexOf(fixedAnswer) >= 0) {
       alert("Nice! " + userAnswer + " is quite evil indeed.")
       userAnswerCorrect2++;
+      villains.splice(index, 1);
     } else {
       alert("Well if that's one of them, it's not one I know. Sorry.");
     }
     tries2++;
   }
   alert("Well here's my villain list too:  Legion of Doom, Sinister Six, Brotherhood, League of Shadows, Suicide Squad, and then I tagged on the Children of Thanos too, because... well they suck.")
-  alert("You got " + userAnswerCorrect2 + " out of " + villains.length + " right. I'm impressed yet again.");
+  alert("You got " + userAnswerCorrect2 + " out of 6 right. I'm impressed yet again.");
 }
-
-alert("Well that is all I have for you. Hope you learned something about me, and that this helps you learn more in as you read.")
-*/

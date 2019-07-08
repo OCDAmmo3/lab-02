@@ -143,8 +143,8 @@ function questionSix(){
 
 function questionSix() {
   //ask whats a favorite number
-  var favNumber = 9; 
-  var userAnswer = 0; 
+  var favNumber = 9;
+  var userAnswer = 0;
   var tries = 0;
 
   while(tries < 3){
@@ -156,11 +156,11 @@ function questionSix() {
       tries++;
       alert('Too much; Go lower!');
     } else {
-      alert('you right.');
+      alert('That IS my favorite number. It was randomly given to me 5 years in a row for baseball.');
       tries+=3;
     }
   }
-  
+
 }
 
 function questionSeven() {
@@ -170,7 +170,7 @@ function questionSeven() {
   var userAnswerCorrect2 = 0;
 
   while(tries2 !== 6) {
-    var userAnswer = prompt("How about 6 of my favorite villain groups?");
+    var userAnswer = prompt("Can you name 6 of my favorite villain groups?");
     var fixedAnswer = userAnswer.toLowerCase().trim();
     var index = villains.indexOf(userAnswer);
     if (villains.indexOf(fixedAnswer) >= 0) {
@@ -182,6 +182,6 @@ function questionSeven() {
     }
     tries2++;
   }
-  alert("Well here's my villain list too:  Legion of Doom, Sinister Six, Brotherhood, League of Shadows, Suicide Squad, and then I tagged on the Children of Thanos too, because... well they suck.")
+  alert("Well here's my villain list:  Legion of Doom, Sinister Six, Brotherhood, League of Shadows, Suicide Squad, and then I tagged on the Children of Thanos too, because... well they suck.")
   alert("You got " + userAnswerCorrect2 + " out of 6 right. I'm impressed yet again.");
 }

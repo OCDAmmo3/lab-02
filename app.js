@@ -174,11 +174,11 @@ function questionSeven() {
     var fixedAnswer = userAnswer.toLowerCase().trim();
     var index = villains.indexOf(userAnswer);
     if (villains.indexOf(fixedAnswer) >= 0) {
-      alert("Nice! " + userAnswer + " is quite evil indeed.")
+      alert("Nice! " + userAnswer.trim() + " is quite evil indeed.")
       userAnswerCorrect2++;
       villains.splice(index, 1);
     } else {
-      alert("Well if that's one of them, it's not one I know. Sorry.");
+      alert("You've either already answered with that, or it's not one of my favorites. Sorry.");
     }
     tries2++;
   }
